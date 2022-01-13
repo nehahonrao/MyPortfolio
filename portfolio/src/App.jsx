@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Topbar from "./components/topbar/Topbar";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";

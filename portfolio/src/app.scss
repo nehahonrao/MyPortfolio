@@ -7,7 +7,11 @@
     background-color: rgb(93, 110, 98);
     position: relative;
     top: 10vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;   //snap to closest section
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
     
     >*{
         width:100%;

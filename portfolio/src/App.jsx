@@ -6,11 +6,15 @@ import About from "./components/about/About";
 import Project from "./components/project/Project";
 import Skill from "./components/skill/Skill";
 import "./app.scss";
+import { useState } from 'react';
+import Menu from './menu/Menu';
 
 function App() {
+  const[menuOpen,setMenuOpen]=useState(false);
   return (
     <div className="app">
-     <Topbar />
+     <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+     <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <div className="sections">
        <Home />
        <About />

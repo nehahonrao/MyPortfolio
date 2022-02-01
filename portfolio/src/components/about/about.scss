@@ -1,4 +1,31 @@
 .about{
 width: 100%;
 background-color: lightskyblue;
+display: flex;
+overflow:hidden;
+
+.left{
+    // divide pages in two equal section
+    flex:0.5;  
+    .imgcontainer{
+        height: 700px;
+        width: 700px;
+        // background-color: red;
+        // border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 90%;
+            border-radius: 30%;
+            
+        }
+    }
+ 
+
+}
+.right{
+    // divide pages in two equal section
+    flex: 0.5;
+}
 }
